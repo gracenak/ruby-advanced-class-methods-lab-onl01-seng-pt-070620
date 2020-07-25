@@ -47,7 +47,7 @@ class Song
     artist_name = new_filename[0]
     name= new_filename[1].chomp!(".mp3")
     song = self.new
-    song.name =name
+    song.name= name
     song.artist_name = artist_name
     song
     
