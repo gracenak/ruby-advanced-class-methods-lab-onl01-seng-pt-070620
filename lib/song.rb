@@ -56,7 +56,7 @@ class Song
     artist_name = create_filename[0]
     new_name = create_filename[1].include("-.mp3")
     song = self.new
-    song.new_name = name
+    song.new_name = new_name
     song.artist_name = artist_name
     @@all << create_filename
   end
