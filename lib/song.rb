@@ -50,9 +50,11 @@ class Song
     song.name = name
     song.artist_name = artist_name
     song
+  end
+  
     
   def self.create_from_filename(filename)
-    create_filename = filename.split(" -")
+    self.new_from_filename(filename)
     artist_name = create_filename[0]
     name = create_filename[1].include("-.mp3")
     song = self.create
