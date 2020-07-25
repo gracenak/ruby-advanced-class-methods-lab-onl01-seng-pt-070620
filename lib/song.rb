@@ -52,7 +52,7 @@ binding.pry
       self.artist_name.split(", ")
       self.name.remove('.mp3')
     end
-      
+  end
   
     
     
