@@ -55,8 +55,8 @@ class Song
     create_filename = filename.split(" -")
     artist_name = create_filename[0]
     new_name = create_filename[1].include("-.mp3")
-    song = self.new
-    song.new_name = new_name
+    song = self.create
+    song.name = name
     song.artist_name = artist_name
     @@all << create_filename
   end
