@@ -55,12 +55,9 @@ class Song
     
   def self.create_from_filename(filename)
     self.new_from_filename(filename)
-    artist_name = filename[0]
-    name = filename[1].chomp!(".mp3")
     song = self.create
     song.name = name
     song.artist_name = artist_name
-    @@all << song
     song
   end
   
