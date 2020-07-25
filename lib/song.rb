@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -41,16 +42,16 @@ class Song
     self.all.sort_by {|song|song.name}
   end
   
-  def self.new_from_filename(data)
-    song = self.new
-    song.name = "Blank Space"
-    song.artist_name = "Taylor Swift"
+  def self.new_from_filename(filename)
+    filename = self.new
+    filename.artist_name = artist_name
+binding.pry
     
     data.each do |name, artist_name|
       puts "#{artist_name} "-" #{name}"
       self.artist_name.split(", ")
       self.name.remove('.mp3')
-      
+    end
       
   
     
