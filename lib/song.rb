@@ -43,19 +43,11 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    song = self.new
-    artist_name = self.artist_name
-    
-    
-    
-    self.artist_name.split(", ")
-binding.pry
-    
-    data.each do |name, artist_name|
+    new_song = filename.split("-")
+    artist_name = filename(0)
+    name = filename(1).remove('.mp3')
       puts "#{artist_name} "-" #{name}"
-      self.artist_name.split(", ")
-      self.name.remove('.mp3')
-    end
+    
   end
   
     
